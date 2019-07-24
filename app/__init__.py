@@ -12,8 +12,8 @@ from flask_bcrypt import Bcrypt
 import os
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'SECRET_KEY'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
-#app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')  #postgres on heroku
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')  #postgres on heroku
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = 'Modification'
 app.config['DEBUG'] = 'DEBUG'
 
