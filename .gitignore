@@ -1,0 +1,17 @@
+# SQLite databases
+sqlite
+site.db
+
+# Virtual environment
+venv
+
+#site.db
+site.db
+
+#testdb.db
+testdb.db
+
+#config.py
+config.py
+
+#flask
